@@ -1,0 +1,444 @@
+/*
+ * dio_lcfg.c
+ *
+ *  Created on: Nov 10, 2012
+ *      Author: armin
+ */
+#include "dio.h"
+#include "dio_lcfg.h"
+
+const dio_configType dio_initialConfiguration_s =
+{
+   /* configure single pins used for input or output */
+   {
+      /* Port A Pin configuration */
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      /* Port B Pin configuration */
+      {
+         DIO_PORT_B,	  /* SS-Pin of SPI */
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,	/* SCK-Pin of SPI */
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,	/* MOSI-Pin of SPI */
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,	/* MISO-Pin of SPI */
+         DIO_CHANNEL_3,
+         DIO_PIN_INPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_HIGH
+      },
+      /* Port C Pin configuration */
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      /* Port D Pin configuration */
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      /* Port E Pin configuration */
+      {
+         DIO_PORT_E,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_E,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_E,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_E,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_E,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_E,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_E,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_E,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      /* Port F Pin configuration */
+      {
+         DIO_PORT_F,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_F,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_F,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_F,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_F,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_F,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_F,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_F,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      /* Port G Pin configuration */
+      {
+         DIO_PORT_G,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_G,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_G,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_G,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_G,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_G,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_G,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_G,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+   },
+   {
+      1,                            /* one port group configured */
+         {
+            16,                        /* 16 pins in portgroup 1 */
+            {
+               DIO_CHANNEL_PA0,        /* PB0 in portgroup 1 */
+               DIO_CHANNEL_PA1,        /* PB1 in portgroup 1 */
+               DIO_CHANNEL_PA2,        /* PB2 in portgroup 1 */
+               DIO_CHANNEL_PA3,        /* PB3 in portgroup 1 */
+               DIO_CHANNEL_PA4,        /* PB4 in portgroup 1 */
+               DIO_CHANNEL_PA5,        /* PB5 in portgroup 1 */
+               DIO_CHANNEL_PA6,        /* PB6 in portgroup 1 */
+               DIO_CHANNEL_PA7,        /* PB7 in portgroup 1 */
+               DIO_CHANNEL_PB0,        /* PC0 in portgroup 1 */
+               DIO_CHANNEL_PB1,        /* PC1 in portgroup 1 */
+               DIO_CHANNEL_PB2,        /* PC2 in portgroup 1 */
+               DIO_CHANNEL_PB3,        /* PC3 in portgroup 1 */
+               DIO_CHANNEL_PB4,        /* PC4 in portgroup 1 */
+               DIO_CHANNEL_PB5,        /* PC5 in portgroup 1 */
+               DIO_CHANNEL_PB6,        /* PC6 in portgroup 1 */
+               DIO_CHANNEL_PB7        /* PC7 in portgroup 1 */
+            }
+         }
+   }
+};
+
+const void *dio_getlcfgdata(void)
+{
+   return ((void*) &dio_initialConfiguration_s);
+}
+

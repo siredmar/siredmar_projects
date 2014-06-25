@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Generator" content="Kate, the KDE Advanced Text Editor" />
+<title>bench_bcm2835.c</title>
+</head>
+<body>
+<pre style='color:#1f1c1b;background-color:#ffffff;'>
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;bcm2835.h&gt;</span>
+
+<span style='color:#006e28;'>#define PIN RPI_GPIO_P1_07 // GPIO 4</span>
+
+<span style='color:#0057ae;'>int</span> main(<span style='color:#0057ae;'>int</span> argc, <span style='color:#0057ae;'>char</span> *argv[]) {
+    <b>if</b>(!bcm2835_init())
+        <b>return</b> <span style='color:#b08000;'>1</span>;
+    <i><span style='color:#898887;'>// Set the pin to be an output</span></i>
+    bcm2835_gpio_fsel(PIN, BCM2835_GPIO_FSEL_OUTP);
+    <b>while</b>(<span style='color:#b08000;'>1</span>) { <i><span style='color:#898887;'>// Blink</span></i>
+        bcm2835_gpio_write(PIN, HIGH);
+        bcm2835_gpio_write(PIN, LOW);
+    }
+    <b>return</b> <span style='color:#b08000;'>0</span>;
+}</pre>
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+1. Preface - The General Idea
+The idea behind this project was to create a handy low-power computer for bicycles.
+We wanted to have a small device which povides multiple information that are received
+via the Global Positioning System (GPS).....
+
+2. Projektplanung
+----> hier sollte halt stehen wie wir uns das vorgestellt habe: Aufgabenverteilung,
+      Zeit-/Projektplanung, Release-Datum für ersten prototyp etc....(ham das mit dem
+      Prototyp aus bekannten Gründen wieder übern Haufen geschmissen, kömmer alles hier
+      rein schreiben...)
+
+3. Hardware
+3.1. General
+Having regard to the low power aspect nearly the entire hardware design has to be adapted
+for this issue. 
+3.2. Requirements
+
+3.3. Hardware Layout
+- Bildchen
+- Gründe, warum es genau so ausssieht und net anders (kompakt, hitzebeständig, k.a. :D)
+
+3.4. Schematics
+n schaltplan halt
+
+3.5. Implementation
+- drucken des HW-layouts auf folie
+- ätzen der platine (fotolack)
+- löten von dem ganzen rotz ;-)
+
+3.6.1. First Prototype
+- Bildchen
+- nutzbare Features
+
+3.6.2. Problems that occurred during the Implementation
+jo...der ganze leidenszyklus kommt hierrein :D
+- Kurzschlüsse
+- geschrottete Prozessoren
+- ...
+---> Was an der Stelle eventuell interessant ist:
+     - Welche Lehren haben wir aus dem ganzen gezogen 
+     - Was würden wir nächstes mal anders machen
+
+4. Software Development
+4.1. General Note
+For this project we decided to use the C Programming Language. There is a entire toolchain
+available for devloping software components in C for Atmel devices. Furthermore the needed
+tools (such as compiler, debugger and other build tools) are standing under the GNU Public License
+(GPL).....
+
+...Unlike writing applications for Windows or Unix systems, the success of embedded software
+development depends more on programming language skills and good code. Not only working, but good code.
+Seen from this angle we decided to define some coding rules for this project:
+    1.  Rule: Keep the code as simple as possible.
+        Rationale: It is very important to know exaclty what happens within the code. Furthermore
+                   it shall be easy to maintain or even expand the existing code in future.
+    2.  Rule: Keep preprocessor macros as simple as possible.
+        Rationale: Especially when using function-like macros or a lot of nested macros it is very hard
+                   to determine how the actual code looks like. When a macro becomes to complicated
+                   a simple helper function shall be implemented.
+    3.  Rule: Every object or function that has internal linkage shall be declard AND defined
+              with the 'static' storage class specifier.
+        Rationale: Functions and variables, that are only used within one source file, shall NOT be accessable
+                   from other source files. (The default storage class specifier for functions is 'extern')
+    4.  Rule: The keyword 'extern' shall not be used within .c files.
+        Rationale: In header files, objects and functions with external 
+                   linkage....
+----------------------------------------------->
+Ok...das ganze geschwafel über den C Standard kann man sich echt sparen....Was evtl noch interessant wäre an
+dieser Stelle: Welchen C Standard verwenden wir überhaupt? In der Makefile steht zwar C99, aber brauchen wir
+das überhaupt? Ich denk das gute alte (und vorallem vollständige) ANSI-C taugt unseren Bedürfnissen denke ich 
+alle mal.
+
+Außerdem muss hier noch rein:
+Aufteilen der ganzen software in einzelne Module (evtl. zu jedem Modul noch eine kurze Beschreibung, evtl in Unterkapiteln)
+----------------------------------------------->
+4.2 Toolchain
+4.1. The Compiler
+The avr-gcc compiler is a ported version of the GNU gcc compiler. Like the GNU tools, the avr-gcc
+is under the GNU Public License....
+
+4.2. Required Libraries
+The only library used within this project is the avrlibc. It contains useful macros that are a huge
+help at programming Atmel AVRs....
+
+4.3. Make
+...
+
+4.4. The Programmer
+Avr-dude provides all necessary features that were required for this project. Like the avr-gcc compiler
+it is under the GNU Public License and well documented....
+
+4.5. Other used tools
+4.5.1. Subversion
+For version control the Subversion VCS (Version Control System) has been used.....
+
+4.5.2. Editor
+Bla...Developer`s choice....blah blah...
+
+4.5.3. m-file
+---> muss ich mir die Doku dazu nochmal genau durchlesen
+
+5. Requirements
+5.1. GPS
+   - The GPS module shall provide the following data:
+            - current speed
+            - current latitude
+            - current longitude
+            - the current time
+            - the current date
+            - available satellites
+   --------> schreib ich noch gar zu ende...
+5.2. SPI
+   --------> schreib ich noch gar zu ende...
+5.3. Display
+   - The display module shall provide an interface to write text
+     on the actual LCD display.
+   - It shall provide an interface for writing pictures on the
+     actual LCD display.......---> usw. usf. etc. pp. :)
+
+5.4. UART
+   - It shall be possible to receive data from the microcontroller
+     via RS232 on the PC
+    .....
+
+5.5. ADC
+...
+
+5.6. LED
+...
+
+5.7. Timer
+...
+
+5.8. Touch
+...
+
+
+6. Testing
+----> Hier steht, was wir uns alles vorgenommen haben (oder hätten vornehmen können ;D)
+
+7. Problems that occurred during software development
+----> Die abgefahrenen Interrupt-sperrereien :)
+
+8. User Guide
+8.1. General
+----> Hier sollte stehen, dass wir die Funktionalität nur für Linux, und ausschließlich für Linux
+      garantieren....
+      Eventuell sollten wir auch hier reinschreiben, dass wir für die Kack windows-line-endings nix garantieren...
+      wir garantieren nur für den guten alten LF
+8.1. Installing Toolchain
+----> Download-quellen, ein paar Hinweise zur Installation (gibts ja schon haufenweise im Internet)
+8.2. First Build
+----> Kurze beschreibung wie man zu nem ersten Ergebnis kommt
+8.3. Developing displayboard
+----> Hinweise zur Erweiterbarkeit...Referenz auf die Modularität des Codes, dass im Mom. noch kein
+      Betriebssystem implementiert ist und somit alles über die Main-fkt. läuft etc.
+8.4. Prospect
+----> Ein Ausblick in die Zukunft: Was kann man noch alles für tolle Sachen damit machen, z.B. dieses
+      femto OS aufsetzen und die ganze scheiße mit preemtiven scheduling zum laufen bringe (dazu müsste
+      aber erst einmal sicher gestellt werden, dass die Funktionen reentrant sind, also gleichzeitig mehrfach
+      ausgeführt werden <----- dafür übernehmen wir keine garantie ^^)
+
+9. Conclusion
+----> Rückblick auf das Projekt, was war scheiße, was war toll, was würden wir das nächste mal total anders machen
+
+
+
+.....
+- Literaturverzeichnis (Linkliste ;-) )
+- Stichwortverzeichnis (eventuell, nicht unbedingt notwendig, is recht aufwendig)

@@ -1,0 +1,252 @@
+/*
+ * dio_lcfg.c
+ *
+ *  Created on: Nov 10, 2012
+ *      Author: armin
+ */
+#include "dio.h"
+#include "dio_lcfg.h"
+
+const dio_configType dio_initialConfiguration_s =
+{
+   /* configure single pins used for input or output */
+   {
+      /* Port A Pin configuration */
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_A,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      /* Port B Pin configuration */
+      {
+         DIO_PORT_B,	  /* SS-Pin of SPI */
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,	/* SCK-Pin of SPI */
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,	/* MOSI-Pin of SPI */
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,	/* MISO-Pin of SPI */
+         DIO_CHANNEL_3,
+         DIO_PIN_INPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_B,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_HIGH
+      },
+      /* Port C Pin configuration */
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_C,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      /* Port D Pin configuration */
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_0,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_1,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_2,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_3,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_4,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_5,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_6,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+      {
+         DIO_PORT_D,
+         DIO_CHANNEL_7,
+         DIO_PIN_OUTPUT,
+         DIO_PIN_MODE_STANDARD,
+         DIO_PIN_INIT_LOW
+      },
+   },
+   {
+      0 // no port group defined
+   }
+};
+
+const void *dio_getlcfgdata(void)
+{
+   return ((void*) &dio_initialConfiguration_s);
+}
+

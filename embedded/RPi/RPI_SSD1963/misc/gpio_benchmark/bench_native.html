@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Generator" content="Kate, the KDE Advanced Text Editor" />
+<title>bench_native.c</title>
+</head>
+<body>
+<pre style='color:#1f1c1b;background-color:#ffffff;'>
+<i><span style='color:#898887;'>//</span></i>
+<i><span style='color:#898887;'>//  How to access GPIO registers from C-code on the Raspberry-Pi</span></i>
+<i><span style='color:#898887;'>//  Example program</span></i>
+<i><span style='color:#898887;'>//  15-January-2012</span></i>
+<i><span style='color:#898887;'>//  Dom and Gert</span></i>
+<i><span style='color:#898887;'>//  Revised: 15-Feb-2013</span></i>
+
+<i><span style='color:#898887;'>// Access from ARM Running Linux</span></i>
+
+<span style='color:#006e28;'>#define BCM2708_PERI_BASE        0x20000000</span>
+<span style='color:#006e28;'>#define GPIO_BASE                (BCM2708_PERI_BASE + 0x200000)	</span><i><span style='color:#898887;'>/* GPIO controller */</span></i>
+
+
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;stdio.h&gt;</span>
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;stdlib.h&gt;</span>
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;fcntl.h&gt;</span>
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;sys/mman.h&gt;</span>
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;unistd.h&gt;</span>
+
+<span style='color:#006e28;'>#define PAGE_SIZE  (4*1024)</span>
+<span style='color:#006e28;'>#define BLOCK_SIZE (4*1024)</span>
+
+<span style='color:#0057ae;'>int</span> mem_fd;
+<span style='color:#0057ae;'>void</span> *gpio_map;
+
+<i><span style='color:#898887;'>// I/O access</span></i>
+<span style='color:#0057ae;'>volatile</span> <span style='color:#0057ae;'>unsigned</span> *gpio;
+
+
+<i><span style='color:#898887;'>// GPIO setup macros. Always use INP_GPIO(x) before using OUT_GPIO(x) or SET_GPIO_ALT(x,y)</span></i>
+<span style='color:#006e28;'>#define INP_GPIO(g) *(gpio+((g)/10)) &amp;= ~(7&lt;&lt;(((g)%10)*3))</span>
+<span style='color:#006e28;'>#define OUT_GPIO(g) *(gpio+((g)/10)) |=  (1&lt;&lt;(((g)%10)*3))</span>
+<span style='color:#006e28;'>#define SET_GPIO_ALT(g,a) *(gpio+(((g)/10))) |= (((a)&lt;=3?(a)+4:(a)==4?3:2)&lt;&lt;(((g)%10)*3))</span>
+
+<span style='color:#006e28;'>#define GPIO_SET *(gpio+7)	// sets   bits which are 1 ignores bits which are 0</span>
+<span style='color:#006e28;'>#define GPIO_CLR *(gpio+10)	// clears bits which are 1 ignores bits which are 0</span>
+
+<span style='color:#0057ae;'>void</span> setup_io();
+
+<span style='color:#0057ae;'>int</span> main(<span style='color:#0057ae;'>int</span> argc, <span style='color:#0057ae;'>char</span> **argv)
+{
+    <span style='color:#0057ae;'>int</span> g, rep;
+
+    <i><span style='color:#898887;'>// Set up gpi pointer for direct register access</span></i>
+    setup_io();
+
+<i><span style='color:#898887;'>// Set GPIO pin 4 to output</span></i>
+    INP_GPIO(<span style='color:#b08000;'>4</span>);		<i><span style='color:#898887;'>// must use INP_GPIO before we can use OUT_GPIO</span></i>
+    OUT_GPIO(<span style='color:#b08000;'>4</span>);
+
+    <b>while</b> (<span style='color:#b08000;'>1</span>) {
+	GPIO_SET = <span style='color:#b08000;'>1</span> &lt;&lt; <span style='color:#b08000;'>4</span>;
+	GPIO_CLR = <span style='color:#b08000;'>1</span> &lt;&lt; <span style='color:#b08000;'>4</span>;
+    }
+    <b>return</b> <span style='color:#b08000;'>0</span>;
+
+}
+
+<i><span style='color:#898887;'>//</span></i>
+<i><span style='color:#898887;'>// Set up a memory regions to access GPIO</span></i>
+<i><span style='color:#898887;'>//</span></i>
+<span style='color:#0057ae;'>void</span> setup_io()
+{
+    <i><span style='color:#898887;'>/* open /dev/mem */</span></i>
+    <b>if</b> ((mem_fd = open(<span style='color:#bf0303;'>&quot;/dev/mem&quot;</span>, O_RDWR | O_SYNC)) &lt; <span style='color:#b08000;'>0</span>) {
+	printf(<span style='color:#bf0303;'>&quot;can't open /dev/mem </span><span style='color:#ff80e0;'>\n</span><span style='color:#bf0303;'>&quot;</span>);
+	exit(-<span style='color:#b08000;'>1</span>);
+    }
+
+    <i><span style='color:#898887;'>/* mmap GPIO */</span></i>
+    gpio_map = mmap(NULL,	<i><span style='color:#898887;'>//Any adddress in our space will do</span></i>
+		    BLOCK_SIZE,	<i><span style='color:#898887;'>//Map length</span></i>
+		    PROT_READ | PROT_WRITE,	<i><span style='color:#898887;'>// Enable reading &amp; writting to mapped memory</span></i>
+		    MAP_SHARED,	<i><span style='color:#898887;'>//Shared with other processes</span></i>
+		    mem_fd,	<i><span style='color:#898887;'>//File to map</span></i>
+		    GPIO_BASE	<i><span style='color:#898887;'>//Offset to GPIO peripheral</span></i>
+	);
+
+    close(mem_fd);		<i><span style='color:#898887;'>//No need to keep mem_fd open after mmap</span></i>
+
+    <b>if</b> (gpio_map == MAP_FAILED) {
+	printf(<span style='color:#bf0303;'>&quot;mmap error %d</span><span style='color:#ff80e0;'>\n</span><span style='color:#bf0303;'>&quot;</span>, (<span style='color:#0057ae;'>int</span>) gpio_map);	<i><span style='color:#898887;'>//errno also set!</span></i>
+	exit(-<span style='color:#b08000;'>1</span>);
+    }
+    <i><span style='color:#898887;'>// Always use volatile pointer!</span></i>
+    gpio = (<span style='color:#0057ae;'>volatile</span> <span style='color:#0057ae;'>unsigned</span> *) gpio_map;
+}
+</pre>
+</body>
+</html>

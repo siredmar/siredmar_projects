@@ -1,0 +1,28 @@
+Description:
+============
+This is a benchmark for the GPIO system of the raspberry pi.
+It uses GPIO4 (Pin1_7) on the RPI. Use an oscilliscope to see the pin toggle
+and thus the toggle frequency.
+
+Libraries to  be testet:
+- Toggling using /proc/sys system in a shell script
+- Toggling using the wiringPi library in c
+- Toggline using the bcm2835 library in c
+- Toggling writing directly to the port registers in c
+
+All benchmarks are compiled with the optimization -O0 and -O3 for further 
+optimization.
+
+Requirements:
+============
+wiringPi library (git://git.drogon.net/wiringPi)
+bcm28335 library (http://www.airspayce.com/mikem/bcm2835/bcm2835-1.26.tar.gz)
+
+
+Build:
+======
+Use `make` in the shell to build the benchmarks.
+
+Clean:
+======
+Use `make clean` to clean the source directory.

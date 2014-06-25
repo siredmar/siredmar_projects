@@ -1,0 +1,174 @@
+% Dokument-Typ festlegen
+\documentclass[titlepage, headsepline, footsepline, a4paper,BCOR=8.25mm, DIV=15]{scrartcl}
+
+% Unterstützung für Deutsch einbinden
+%\usepackage[ngerman]{babel}
+
+% Pakete für die Darstellung und Eingabemöglichkeit von Umlauten
+%\usepackage[T1]{fontenc}
+%\usepackage[ansinew]{inputenc}
+
+%\usepackage[bookmarks=true,pdfborder={0 0 0}]{hyperref}
+
+ \usepackage{listings}
+  \usepackage{courier}
+ \lstset{
+         basicstyle=\footnotesize\ttfamily, % Standardschrift
+         numbers=left,               % Ort der Zeilennummern
+         numberstyle=\tiny,          % Stil der Zeilennummern
+         %stepnumber=2,               % Abstand zwischen den Zeilennummern
+         numbersep=5pt,              % Abstand der Nummern zum Text
+         tabsize=2,                  % Groesse von Tabs
+         extendedchars=true,         %
+         breaklines=true,            % Zeilen werden Umgebrochen
+         keywordstyle=\color{red},
+    		frame=b,         
+ %        keywordstyle=[1]\textbf,    % Stil der Keywords
+ %        keywordstyle=[2]\textbf,    %
+ %        keywordstyle=[3]\textbf,    %
+ %        keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
+         stringstyle=\color{white}\ttfamily, % Farbe der String
+         showspaces=false,           % Leerzeichen anzeigen ?
+         showtabs=false,             % Tabs anzeigen ?
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false      % Leerzeichen in Strings anzeigen ?        
+ }
+ \lstloadlanguages{% Check Dokumentation for further languages ...
+         %[Visual]Basic
+         %Pascal
+         C
+         %C++
+         %XML
+         %HTML
+         %Java
+ }
+%\DeclareCaptionFont{blue}{\color{blue}} 
+
+%\captionsetup[lstlisting]{singlelinecheck=false, labelfont={blue}, textfont={blue}}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+% Farben nutzen
+\usepackage{xcolor}
+\definecolor{darkgreen}{rgb}{0,130,0}
+
+\usepackage{listings} 
+\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt} 
+\lstset{language=Matlab}
+\lstset{basicstyle={\ttfamily\small}}
+\lstset{keywordstyle={\color{blue}}, backgroundcolor={\color{white}}, frame={shadowbox}, commentstyle={\color{darkgreen}}}
+
+% Autoren und Titel definieren
+\author{Christian Eismann}
+\title{SW-Developement for the GPS bycicle computer} 
+
+\usepackage{graphicx}
+\pagestyle{headings} 
+% \fontfamily{phv}
+
+\usepackage{caption}
+
+
+\begin{document}
+\section{Design topics}
+\begin{itemize}
+\item Mapping features to various modules - The functionality is separated to different modules (e.g. GPS module, Interrupt module, ...)
+\item Running synchronous to GPS data receiving (triggered by USART interrupt)
+\begin{itemize}
+\item no timing/scheduling problems
+\item simple integration of the basic features
+\item no OS required
+\item but: no complex user interaction possible (e.g. via touch screen)
+\end{itemize}
+\item no OS is used
+\begin{itemize}
+\item integration too time consuming
+\item functions have to be reentrant
+\item balancing of tasks pretty time consuming and complex (detailed design necessary)
+\end{itemize}
+\end{itemize}
+
+\section{The NMEA/PUBX Protocol}
+\begin{figure}[hb]
+\includegraphics[width=\textwidth]{NMEA_protocol}
+\end{figure}
+\begin{itemize}
+\item NMEA: simple (serial) ASCII protocol (standardized)
+\item PUBX: proprietary NMEA extension (used for initialization)
+\end{itemize}
+
+\section{Components}
+\subsection{SPI (Serial Peripheral Interface)}
+\begin{itemize}
+\item simple SPI-driver
+\item used for communication between $\mu$C and SD chip and the display 
+\end{itemize}
+
+\subsection{Display}
+\subsubsection{Setting single pixels}
+\begin{figure}[hb]
+\includegraphics[width=\textwidth]{display_ram}
+\end{figure}
+\begin{itemize}
+\item direct pixel access via display data RAM
+\item RAM is organized in pages
+\item total size of $(8 pages * 8 bit) * 132 bit$ (actual only 128 bit, because of the display resolution of 128 x 64)
+\item internal SW buffer: sequential data structure (8 bit data type)
+\item positioning within the internal buffer for setting a pixel with coordinates X and Y: $INDEX = (Y * 8) + (X / 8)$
+\item the actual bit is determined by : $BIT\_NR = Y \& 0x07$ (determining the actual row within a memory page)
+\item Summary: the index of the data buffer represents the 'column' number within the data memory (of a single page), the result of a bit-wise AND
+operation with Y results in the actual row of the respective memory page
+\end{itemize}
+\begin{figure}[htb]
+\lstinputlisting[language=C,label=put_pixel_function,caption=Example: display\_putpixel() function]{put_pixel.c}
+\end{figure}
+
+\subsubsection{Drawing BMPs/Text}
+\begin{itemize}
+\item Converting BMPs into simple C-Arrays
+\item Text: using a 5x7 character set (organized in a simple one dimensional array)
+\end{itemize}
+
+\subsection{LEDs}
+\begin{itemize}
+\item simple IO access
+\item used as status indicator
+\item e.g. receiving of GPS data, recording of GPS data, ...
+\end{itemize}
+
+\subsection{UART (Universal Asynchronous Receiver Transmitter)}
+\begin{itemize}
+\item simple driver module
+\item used for communication between PC and $\mu$C
+\end{itemize}
+
+\subsection{GPS}
+\begin{itemize}
+\item initialization of the GPS receiver:
+\begin{itemize}
+\item setting of the baud rate (for synchronization with the $\mu$C
+\item setting refresh rate to 1 per second (receiving one data set per second)
+\item selection of required data sets (RMC, GGA, VTG)
+\end{itemize}
+\item splitting of NMEA data sets (',*' separator)
+\item storage into internal data structure
+\end{itemize}
+
+\subsection{SDC/FAT16}
+\begin{itemize}
+\item tiny open source library
+\item horrible code (e.g. huge amount of magic numbers, magic bit shifting with several side effects)
+\end{itemize}
+
+\subsection{Touch screen}
+\begin{itemize}
+\item bla
+\end{itemize}
+
+\end{document}

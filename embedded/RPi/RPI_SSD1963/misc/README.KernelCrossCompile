@@ -1,0 +1,22 @@
+1.0 Crosscompiling -  Kernel 3.6.11
+Get Toolchain from https://github.com/raspberrypi
+
+export CCPREFIX=/path/to/compiler
+export CCPREFIX=/home/armin/dev/RPi_SSD1963/misc/toolchain/arm-bcm2708/arm-bcm2708-linux-gnueabi/bin/arm-bcm2708-linux-gnueabi-
+cd /usr/src
+wget https://github.com/raspberrypi/linux/archive/rpi-3.6.y.tar.gz
+tar xvfz rpi-3.6.y.tar.gz
+cd rpi-3.6.y
+make prproper
+zcat /proc/config.gz > .config
+make ARCH=arm CROSS_COMPILE=${CCPREFIX} oldconfig
+make ARCH=arm CROSS_COMPILE=${CCPREFIX} menuconfig
+make ARCH=arm CROSS_COMPILE=${CCPREFIX} -j4
+make ARCH=arm CROSS_COMPILE=${CCPREFIX} modules
+
+cp arch/arm/boot/Image /tmp/kernel_new.img	
+export MODULES_TEMP=/tmp/modules
+make ARCH=arm CROSS_COMPILE=${CCPREFIX} INSTALL_MOD_PATH=${MODULES_TEMP} modules_install
+
+
+

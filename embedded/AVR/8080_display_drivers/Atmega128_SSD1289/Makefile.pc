@@ -1,0 +1,91 @@
+# Hey Emacs, this is a -*- makefile -*-
+
+# AVR-GCC Makefile template, derived from the WinAVR template (which
+# is public domain), believed to be neutral to any flavor of "make"
+# (GNU make, BSD make, SysV make)
+
+
+FORMAT = ihex
+#FORMAT = binary
+TARGET = main
+#SRC = sdc/crc16.c fat16/fat16.c sdc/sdc.c  interrupts/interrupts.c tools/tools.c touch/touch.c led/led.c timer/timer.c gps/gps.c uart/uart.c spi/spi.c display/display.c display/images.c windows/windows.c $(TARGET).c
+SRC = src/dio/dio.c src/tft/tft.c src/$(TARGET).c
+ASRC =
+OPT = s
+
+# Name of this Makefile (used for "make depend").
+MAKEFILE = Makefile
+
+# Debugging format.
+# Native formats for AVR-GCC's -g are stabs [default], or dwarf-2.
+# AVR (extended) COFF requires stabs, plus an avr-objcopy run.
+DEBUG = stabs
+
+# Compiler flag to set the C Standard level.
+# c89   - "ANSI" C
+# gnu89 - c89 plus GCC extensions
+# c99   - ISO C99 standard (not yet fully implemented)
+# gnu99 - c99 plus GCC extensions
+CSTANDARD = -std=c99
+
+# Place -D or -U options here
+CDEFS =
+
+# Place -I options here
+CINCS =
+
+
+CDEBUG = -g$(DEBUG)
+CWARN = -ffreestanding -pedantic -Wall -Wextra -Winit-self -Wswitch-default -Wunused-parameter -Wunknown-pragmas -Wstrict-overflow=1 -Warray-bounds -Wfloat-equal -Wdeclaration-after-statement -Wundef -Wno-endif-labels -Wshadow -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wvla -Wvolatile-register-var -Wparentheses -g -Os -fno-strict-aliasing
+CTUNING = -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums
+#CEXTRA = -Wa,-adhlns=$(<:.c=.lst)
+CFLAGS = $(CDEBUG) $(CDEFS) $(CINCS) -O$(OPT) $(CWARN) $(CSTANDARD) $(CEXTRA)
+
+
+CC = gcc
+OBJCOPY = objcopy
+OBJDUMP = objdump
+SIZE = size
+NM = nm
+REMOVE = rm -f
+REMOVE_TREE = rm -rf
+MV = mv -f
+
+# Define all object files.
+OBJ = $(SRC:.c=.o) $(ASRC:.S=.o)
+
+# Define all listing files.
+LST = $(ASRC:.S=.lst) $(SRC:.c=.lst)
+
+# Combine all necessary flags and optional flags.
+# Add target processor to flags.
+ALL_CFLAGS = -I. $(CFLAGS) -Iinc
+ALL_ASFLAGS = -I. -x assembler-with-cpp $(ASFLAGS)
+
+ELFSIZE = $(SIZE) -A $(TARGET).elf; $(SIZE) -C $(TARGET).elf
+
+# Default target.
+all: clean build program
+
+# Compile: create object files from C source files.
+.c.o:
+	$(CC) -c $(ALL_CFLAGS) $< -o $@
+
+
+# Compile: create assembler files from C source files.
+.c.s:
+	$(CC) -S $(ALL_CFLAGS) $< -o $@
+
+
+# Assemble: create object files from assembler source files.
+.S.o:
+	$(CC) -c $(ALL_ASFLAGS) $< -o $@
+
+
+# Target: clean project.
+clean:
+	$(REMOVE) $(TARGET).hex $(TARGET).eep $(TARGET).cof $(TARGET).elf \
+	$(TARGET).map $(TARGET).sym $(TARGET).lss \
+	$(OBJ) $(LST) $(SRC:.c=.s) $(SRC:.c=.d)
+#	$(REMOVE_TREE) $(DOXYGEN_OUTPUT_DIR)
+

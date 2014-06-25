@@ -1,0 +1,25 @@
+1. What Processor do we need? 
+Easy to use Atmel Atmega 8Bit CPU
+-> 8 Bit for the application sufficent
+-> Low Power 3.3V
+=> Atmega32L
+
+2. What GPS Receiver do we need?
+Research of available GPS Receivers
+-> found Module with RS232 and 3.3V TTL Levels for TXD and RXD 
+-> no extra levelshifting necessary
+=> NL-552ETTL
+
+-> for UART communication it's adviced to use a oscillator with a low failure rate
+-> The Atmega32L supports @3.3V max 8.0MHz (see slide comparison)
+=> 7.3728 MHz oscillator
+
+3. What display do we need?
+Research of cheap graphical displays
+-> found EA-DOG family with 3.3V power supply
+-> easy to use via SPI
+
+4. What Storage Card do we need?
+-> SD-Card with 3.3V supply fits
+-> easy to use via SPI
+

@@ -1,0 +1,1 @@
+aptitude install java6-runtim

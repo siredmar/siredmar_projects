@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Generator" content="Kate, the KDE Advanced Text Editor" />
+<title>bench_bash.sh</title>
+</head>
+<body>
+<pre style='color:#1f1c1b;background-color:#ffffff;'>
+<i><span style='color:#898887;'>#!/bin/sh</span></i>
+
+<b><span style='color:#880088;'>echo</span></b> <span style='color:#bf0303;'>&quot;4&quot;</span> <b><span style='color:#223388;'>&gt;</span></b> /sys/class/gpio/export
+<b><span style='color:#880088;'>echo</span></b> <span style='color:#bf0303;'>&quot;out&quot;</span> <b><span style='color:#223388;'>&gt;</span></b> /sys/class/gpio/gpio4/direction
+
+<b>while</b> <b><span style='color:#cc00cc;'>true</span></b>
+<b>do</b>
+        <b><span style='color:#880088;'>echo</span></b> 1 <b><span style='color:#223388;'>&gt;</span></b> /sys/class/gpio/gpio4/value
+        <b><span style='color:#880088;'>echo</span></b> 0 <b><span style='color:#223388;'>&gt;</span></b> /sys/class/gpio/gpio4/value
+<b>done</b>
+</pre>
+</body>
+</html>

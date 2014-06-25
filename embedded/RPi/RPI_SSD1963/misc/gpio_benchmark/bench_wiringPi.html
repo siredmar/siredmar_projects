@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Generator" content="Kate, the KDE Advanced Text Editor" />
+<title>bench_wiringPi.c</title>
+</head>
+<body>
+<pre style='color:#1f1c1b;background-color:#ffffff;'>
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;wiringPi.h&gt;</span>
+
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;stdio.h&gt;</span>
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;stdlib.h&gt;</span>
+<span style='color:#006e28;'>#include </span><span style='color:#006e28;'>&lt;stdint.h&gt;</span>
+
+<span style='color:#0057ae;'>int</span> main() {
+  <b>if</b> (wiringPiSetup () == -<span style='color:#b08000;'>1</span>)
+    exit (<span style='color:#b08000;'>1</span>) ;
+
+  pinMode(<span style='color:#b08000;'>7</span>, OUTPUT);
+
+  <b>while</b>(<span style='color:#b08000;'>1</span>) {
+    digitalWrite(<span style='color:#b08000;'>7</span>, <span style='color:#b08000;'>0</span>);
+    digitalWrite(<span style='color:#b08000;'>7</span>, <span style='color:#b08000;'>1</span>);
+  }
+
+  <b>return</b> <span style='color:#b08000;'>0</span> ;
+}
+</pre>
+</body>
+</html>

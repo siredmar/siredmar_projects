@@ -1,0 +1,42 @@
+1. Introduction
+1.1 The Project
+1.2 Tasks
+
+2.0 Toolchain
+2.1 Hardware (eagle)
+2.2 Software (open toolchain decission: virtualbox, linux, avr-gcc, avrdude, make (mit allen flags die es gibt :) ), splint, ISP-programmer)
+
+3.0 Hardware
+3.1 Requirements (rudimentary, Prozessor 3.3V -> GPS 3.3V TTL RS232 communication, RS232 Debug Port (choosable via jumper), Graphic Display, SD-Card, mobile *batteries* and chargbeable via Hub dynamo) 
+3.2 Components (Special: Atmega664L, NL-552ETTL, EA-DOGL1286-W, YAMAICHI SD-Slot, MAX3221, Standard: JTAG, ISP, 5V, 3.3V voltage regulators, 7.3728 MHZ Crystal, 2 LEDs)
+3.3 Creating the Hardware 
+3.3.1 Mainboard, Displayboard, Charging Electronics, Batteries
+3.3.2 Schematic, Layout, chemical etching of the boards, assembly, testing, debugging
+
+4.0 Software
+4.1 Design (mapping features to various modules: drivers, actual applications; synchronous to GPS data receiving (USART interrupt) -> no timing/scheduling problems (actual: one big while(1) loop), No OS used)
+4.2 The NMEA GPS Protocol / PUBX Protocol (used for initialization, data exchange)
+4.3 Components (chronological) [general information, particulary functions, short example]
+	- SPI
+	- Display (Memory Pages, sequential internal Memory, positioning for setting a pixel on/off, API functions for BMP/Text drawing)
+	- LEDs (for debugging)
+	- UART (communication between MC and GPS)
+	- GPS (init(baud-rate, refresh-rate, selection of used data records), gps_split, storage into internal data structure)
+	- SDC/Fat16 (external open source, slightly modified [horrible code])
+	- touch (via adc)
+	- application (windows.c: Processing and presentation of all used GPS data, calculating: distance air/distance complete)
+4.4 Example
+4.5 Problems that occurred
+	- atmega32l RAM (2kb ram too small) -> solution: pincompatibel atmega644l (4kb ram)
+	- Windows line endings in NMEA format (\r\n)
+
+5.0 Conclusion
+5.1 Project topics
+	- missing project environment
+	- good support by Mr. Lenkowski :)
+	- underestimated effort for planned features for two people (even the Pofessor)
+5.2 Further Ideas
+5.2.1	Hardware: (Backlight dimmable via PWM, GPS Reciever on/off via Mosfet, 4 Layer circuitboard (only 1 board), lipo batterie->more flat, ...)
+5.2.2   Software: Integration of an OS (e.g. uOS), further touch screen interaction applications, Rework to a 3 Layer architecture: Driver -> Driver-Interfaces -> Application,
+				  Navigation features: Waypoints, Statistics, ...; PC Application for communication via RS232
+		General:  API documentation automated generation (Doxygen), svn (sourceforge fucking slow), bug/feature tracker

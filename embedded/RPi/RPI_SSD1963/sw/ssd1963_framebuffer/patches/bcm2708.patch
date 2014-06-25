@@ -1,0 +1,23 @@
+--- arch/arm/mach-bcm2708/bcm2708.c	2013-10-02 19:29:10.000000000 +0200
++++ arch/arm/mach-bcm2708/bcm2708.c	2013-08-12 22:23:34.692050745 +0200
+@@ -302,6 +301,11 @@
+ };
+ #endif /* CONFIG_MMC_BCM2708 */
+ 
++static struct platform_device bcm2708_ssd1963 = {
++  .name = "ssd1963",
++  .id = 0,
++};
++
+ #if defined(CONFIG_W1_MASTER_GPIO) || defined(CONFIG_W1_MASTER_GPIO_MODULE)
+ static struct w1_gpio_platform_data w1_gpio_pdata = {
+ 	.pin = W1_GPIO,
+
+@@ -756,6 +732,7 @@
+ #ifdef CONFIG_MMC_BCM2708
+ 	bcm_register_device(&bcm2708_mci_device);
+ #endif
++	bcm_register_device(&bcm2708_ssd1963);
+ 	bcm_register_device(&bcm2708_fb_device);
+ 	if (!fiq_fix_enable)
+ 	{

@@ -1,0 +1,1240 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.7.23)  24 JUL 2011 21:50
+entering extended mode
+**bericht.tex
+(C:\_projektarbeit\_display_board\doc\bericht\bericht.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrartcl.cls
+Document Class: scrartcl 2011/06/16 v3.09a KOMA-Script document class (article)
+
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
+Package: scrkbase 2011/06/16 v3.09a KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+Package: scrbase 2011/06/16 v3.09a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+Package: scrlfile 2011/03/09 v3.09 KOMA-Script package (loading files)
+
+Package scrlfile, 2011/03/09 v3.09 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)))
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
+Package: tocbasic 2011/05/30 v3.09a KOMA-Script package (handling toc-files)
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 115.
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 116.
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 117.
+Class scrartcl Info: You've used standard option `abstracton'.
+(scrartcl)           This is correct!
+(scrartcl)           Internally I'm using `abstract=true'.
+(scrartcl)           If you'd like to set the option with \KOMAoptions,
+(scrartcl)           you'd have to use `abstract=true' there
+(scrartcl)           instead of `abstracton', too.
+Class scrartcl Info: File `scrsize11pt.clo' used instead of
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 124
+7.
+
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize11pt.clo
+File: scrsize11pt.clo 2011/06/16 v3.09a KOMA-Script font size class option (11p
+t)
+) (C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
+Package: typearea 2011/06/16 v3.09a KOMA-Script package (type area)
+
+Package typearea, 2011/06/16 v3.09a KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
+\ta@bcor=\skip41
+\ta@div=\count79
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+\ta@hblk=\skip42
+\ta@vblk=\skip43
+\ta@temp=\skip44
+
+Package typearea Warning: Bad type area settings!
+(typearea)                The detected line width is about 17%
+(typearea)                larger than the heuristically detected line width.
+(typearea)                You should e.g. decrease DIV, increase fontsize
+(typearea)                or change papersize.
+
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 15
+(typearea)             BCOR = 23.47351pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 459.22757pt
+(typearea)              DIV departure   = -17%
+(typearea)              \evensidemargin = 8.60695pt
+(typearea)              \oddsidemargin  = 8.60695pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -15.93353pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.60002pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1139.
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\c@pti@nb@sid@b@x=\box26
+\c@figure=\count86
+\c@table=\count87
+\bibindent=\dimen102
+) (C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/04/25 v0.06b Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count89
+\lst@gtempboxa=\box27
+\lst@token=\toks15
+\lst@length=\count90
+\lst@currlwidth=\dimen103
+\lst@column=\count91
+\lst@pos=\count92
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count93
+\lst@lineno=\count94
+\lst@maxwidth=\dimen106
+
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count95
+\lst@skipnumbers=\count96
+\lst@framebox=\box28
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\courier.sty"
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen107
+\captionmargin@=\dimen108
+\captionwidth=\dimen109
+\caption@indent=\dimen110
+\caption@parindent=\dimen111
+\caption@hangindent=\dimen112
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count97
+Package caption Info: listings package is loaded.
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip47
+\LTright=\skip48
+\LTpre=\skip49
+\LTpost=\skip50
+\LTchunksize=\count98
+\LTcapwidth=\dimen115
+\LT@head=\box29
+\LT@firsthead=\box30
+\LT@foot=\box31
+\LT@lastfoot=\box32
+\LT@cols=\count99
+\LT@rows=\count100
+\c@LT@tables=\count101
+\c@LT@chunks=\count102
+\LT@p@ftn=\toks16
+)
+Class scrartcl Info: longtable captions redefined on input line 83.
+
+(C:\_projektarbeit\_display_board\doc\bericht\bericht.aux
+
+LaTeX Warning: Label `sending_frame' multiply defined.
+
+
+LaTeX Warning: Label `nmea_data_sets_example' multiply defined.
+
+
+LaTeX Warning: Label `static_gps_init' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+ (C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen116
+\scratchbox=\box33
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen117
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks18
+)
+\c@lstlisting=\count109
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+ (C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+Package: ltcaption 2008/03/28 v1.2 longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 88.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 88.
+
+[1
+
+{C:/Users/chei/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(C:\_projektarbeit\_display_board\doc\bericht\bericht.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 30.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+))
+\tf@toc=\write3
+ [2]
+(C:\_projektarbeit\_display_board\doc\bericht\bericht.lof)
+\tf@lof=\write4
+ [3]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/general_functionality.pdf): PDF i
+nclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<general_functionality.pdf, id=16, 699.61375pt x 314.17375pt>
+File: general_functionality.pdf Graphic file (type pdf)
+
+<use general_functionality.pdf>
+Package pdftex.def Info: general_functionality.pdf used on input line 100.
+(pdftex.def)             Requested size: 459.22757pt x 206.22874pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 98--104
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--104
+
+ []
+
+[4 <C:/_projektarbeit/_display_board/doc/bericht/general_functionality.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+[5] (C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.sty
+File: lstlang2.sty 2004/09/05 1.3 listings language file
+)
+(C:\Users\chei\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 164.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 164.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 164--164
+[][][][][][][] 
+ []
+
+(C:\_projektarbeit\_display_board\doc\bericht\Makefile_warnings.mak)
+Underfull \hbox (badness 10000) in paragraph at lines 158--167
+
+ []
+
+[6]
+Underfull \hbox (badness 1077) in paragraph at lines 181--181
+[]|\OT1/cmr/m/n/10.95 8-Bit, \OT1/cmr/bx/n/10.95 3.3V\OT1/cmr/m/n/10.95 , 32kB
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/10.95 Runs on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+\OT1/cmr/m/n/10.95 3.3V,easy to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+\OT1/cmr/m/n/10.95 pro-gram via
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 182--182
+\OT1/cmr/m/n/10.95 GNU GCC and
+ []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 183--184
+[]|\OT1/cmr/m/n/10.95 Became ob-so-lete
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+\OT1/cmr/m/n/10.95 due a lack of
+ []
+
+
+Underfull \hbox (badness 2591) in paragraph at lines 186--186
+[]|\OT1/cmr/m/n/10.95 Pin com-pat-i-ble to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
+\OT1/cmr/m/n/10.95 the ATMega32-L,
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 186--186
+\OT1/cmr/m/n/10.95 64kB Flash, \OT1/cmr/bx/n/10.95 4kB
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]|\OT1/cmr/m/n/10.95 Has 2kB more
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 187--187
+\OT1/cmr/m/n/10.95 RAM than the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[]|\OT1/cmr/m/n/10.95 GPS-Receiver, 5V
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\OT1/cmr/m/n/10.95 sup-ply, \OT1/cmr/bx/n/10.95 RS232
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\OT1/cmr/m/n/10.95 com-mu-ni-ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+\OT1/cmr/m/n/10.95 sup-ports eu-ro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+\OT1/cmr/m/n/10.95 sat-telites, 3.3V
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+\OT1/cmr/m/n/10.95 lev-els makes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
+\OT1/cmr/m/n/10.95 level shift-ing
+ []
+
+
+Underfull \hbox (badness 7649) in paragraph at lines 201--201
+[]|\OT1/cmr/m/n/10.95 5V Low Dropout
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]|\OT1/cmr/m/n/10.95 Can use min.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+[]|\OT1/cmr/m/n/10.95 Discharges the
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 207--207
+[]|\OT1/cmr/m/n/10.95 3.3V needed for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+\OT1/cmr/m/n/10.95 CPU, SD-Card,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
+\OT1/cmr/m/n/10.95 Dis-play, RS232
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+[]|\OT1/cmr/m/n/10.95 EA-DOGL128W,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\OT1/cmr/m/n/10.95 EA-LED68x51-W,
+ []
+
+
+Underfull \hbox (badness 5091) in paragraph at lines 211--211
+\OT1/cmr/m/n/10.95 b/w, white back-
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 212--212
+[]|\OT1/cmr/m/n/10.95 Cheap, easy to
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 212--212
+\OT1/cmr/m/n/10.95 light and touch-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+[]|\OT1/cmr/m/n/10.95 Consumes ap-
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 216--216
+[]|\OT1/cmr/m/n/10.95 Slot for SD-Cards,
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 235
+ []
+
+[7]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/blockschaltbild.pdf): PDF inclusi
+on: found PDF version <1.6>, but at most version <1.5> allowed
+<blockschaltbild.pdf, id=40, 1193.45876pt x 693.59125pt>
+File: blockschaltbild.pdf Graphic file (type pdf)
+
+<use blockschaltbild.pdf>
+Package pdftex.def Info: blockschaltbild.pdf used on input line 262.
+(pdftex.def)             Requested size: 459.22757pt x 266.87999pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 260--266
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--266
+
+ []
+
+[8]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/mainboard_schaltplan.pdf): PDF in
+clusion: found PDF version <1.6>, but at most version <1.5> allowed
+<mainboard_schaltplan.pdf, id=44, 542.85812pt x 344.0855pt>
+File: mainboard_schaltplan.pdf Graphic file (type pdf)
+
+<use mainboard_schaltplan.pdf>
+Package pdftex.def Info: mainboard_schaltplan.pdf used on input line 271.
+(pdftex.def)             Requested size: 459.22757pt x 291.08272pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 269--275
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--275
+
+ []
+
+[9 <C:/_projektarbeit/_display_board/doc/bericht/blockschaltbild.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/mainboard_layout.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<mainboard_layout.pdf, id=53, 324.51236pt x 333.54611pt>
+File: mainboard_layout.pdf Graphic file (type pdf)
+
+<use mainboard_layout.pdf>
+Package pdftex.def Info: mainboard_layout.pdf used on input line 278.
+(pdftex.def)             Requested size: 459.22757pt x 472.0254pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 276--282
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--282
+
+ []
+
+[10 <C:/_projektarbeit/_display_board/doc/bericht/mainboard_schaltplan.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/displayboard_schaltplan.pdf): PDF
+ inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<displayboard_schaltplan.pdf, id=59, 433.68022pt x 338.8158pt>
+File: displayboard_schaltplan.pdf Graphic file (type pdf)
+
+<use displayboard_schaltplan.pdf>
+Package pdftex.def Info: displayboard_schaltplan.pdf used on input line 285.
+(pdftex.def)             Requested size: 459.22757pt x 358.79149pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 283--289
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--289
+
+ []
+
+[11 <C:/_projektarbeit/_display_board/doc/bericht/mainboard_layout.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/displayboard_layout.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<displayboard_layout.pdf, id=65, 325.26518pt x 330.53487pt>
+File: displayboard_layout.pdf Graphic file (type pdf)
+
+<use displayboard_layout.pdf>
+Package pdftex.def Info: displayboard_layout.pdf used on input line 292.
+(pdftex.def)             Requested size: 459.22757pt x 466.68465pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 290--296
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--296
+
+ []
+
+[12 <C:/_projektarbeit/_display_board/doc/bericht/displayboard_schaltplan.pdf>]
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/supplyboard_schaltplan.pdf): PDF 
+inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<supplyboard_schaltplan.pdf, id=71, 621.16068pt x 307.18765pt>
+File: supplyboard_schaltplan.pdf Graphic file (type pdf)
+
+<use supplyboard_schaltplan.pdf>
+Package pdftex.def Info: supplyboard_schaltplan.pdf used on input line 299.
+(pdftex.def)             Requested size: 459.22757pt x 227.10437pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 297--303
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--303
+
+ []
+
+[13 <C:/_projektarbeit/_display_board/doc/bericht/displayboard_layout.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/supplyboard_layout.pdf): PDF incl
+usion: found PDF version <1.6>, but at most version <1.5> allowed
+<supplyboard_layout.pdf, id=78, 1008.76875pt x 557.08125pt>
+File: supplyboard_layout.pdf Graphic file (type pdf)
+
+<use supplyboard_layout.pdf>
+Package pdftex.def Info: supplyboard_layout.pdf used on input line 306.
+(pdftex.def)             Requested size: 459.22757pt x 253.59987pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 304--310
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--310
+
+ []
+
+[14 <C:/_projektarbeit/_display_board/doc/bericht/supplyboard_schaltplan.pdf> <
+C:/_projektarbeit/_display_board/doc/bericht/supplyboard_layout.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/NMEA_protocol.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<NMEA_protocol.pdf, id=86, 949.42705pt x 581.25157pt>
+File: NMEA_protocol.pdf Graphic file (type pdf)
+ <use NMEA_protocol.pdf>
+Package pdftex.def Info: NMEA_protocol.pdf used on input line 321.
+(pdftex.def)             Requested size: 229.61378pt x 140.56752pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 319--325
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--325
+
+ []
+
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/ubx_protocol.pdf): PDF inclusion:
+ found PDF version <1.6>, but at most version <1.5> allowed
+<ubx_protocol.pdf, id=87, 442.71397pt x 145.3129pt>
+File: ubx_protocol.pdf Graphic file (type pdf)
+ <use ubx_protocol.pdf>
+Package pdftex.def Info: ubx_protocol.pdf used on input line 331.
+(pdftex.def)             Requested size: 229.61378pt x 75.36801pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 329--335
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--335
+
+ []
+
+[15 <C:/_projektarbeit/_display_board/doc/bericht/NMEA_protocol.pdf> <C:/_proje
+ktarbeit/_display_board/doc/bericht/ubx_protocol.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/interrupt_function.pdf): PDF incl
+usion: found PDF version <1.6>, but at most version <1.5> allowed
+<interrupt_function.pdf, id=95, 630.355pt x 420.57124pt>
+File: interrupt_function.pdf Graphic file (type pdf)
+
+<use interrupt_function.pdf>
+Package pdftex.def Info: interrupt_function.pdf used on input line 360.
+(pdftex.def)             Requested size: 459.22757pt x 306.39839pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 358--364
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--364
+
+ []
+
+[16 <C:/_projektarbeit/_display_board/doc/bericht/interrupt_function.pdf>]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 393--393
+[][][][][][][] 
+ []
+
+(C:\_projektarbeit\_display_board\doc\bericht\SendFrame.c)
+Underfull \hbox (badness 10000) in paragraph at lines 390--396
+
+ []
+
+[17]
+Overfull \hbox (11.30591pt too wide) in paragraph at lines 398--403
+\OT1/cmr/m/n/10.95 split-ting func-tion is im-ple-mented (\OT1/pcr/m/n/10.95 gp
+s[]split[]gga(), gps[]split[]rmc(), gps[]split[]vtg()\OT1/cmr/m/n/10.95 .
+ []
+
+[18]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 409--409
+[][][][][][][] 
+ []
+
+(C:\_projektarbeit\_display_board\doc\bericht\NMEAexample.txt)
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 407--412
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--412
+
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 417--417
+[][][][][][][] 
+ []
+
+(C:\_projektarbeit\_display_board\doc\bericht\StaticGPSInit.c)
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 415--420
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--420
+
+ []
+
+[19]
+Overfull \hbox (1.40758pt too wide) in paragraph at lines 426--428
+\OT1/cmr/m/n/10.95 send-ing of sin-gle bytes (\OT1/pcr/m/n/10.95 spi[]send()\OT
+1/cmr/m/n/10.95 ) and the read-ing of sin-gle bytes from the SPI (\OT1/pcr/m/n/
+10.95 spi[]read()\OT1/cmr/m/n/10.95 ). 
+ []
+
+[20]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/PIC_power_on.pdf): PDF inclusion:
+ found PDF version <1.6>, but at most version <1.5> allowed
+<PIC_power_on.pdf, id=117, 720.54192pt x 416.36554pt>
+File: PIC_power_on.pdf Graphic file (type pdf)
+ <use PIC_power_on.pdf>
+Package pdftex.def Info: PIC_power_on.pdf used on input line 452.
+(pdftex.def)             Requested size: 321.45789pt x 185.75539pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--456
+
+ []
+
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/PIC_layout.pdf): PDF inclusion: f
+ound PDF version <1.6>, but at most version <1.5> allowed
+<PIC_layout.pdf, id=118, 603.08313pt x 453.25334pt>
+File: PIC_layout.pdf Graphic file (type pdf)
+ <use PIC_layout.pdf>
+Package pdftex.def Info: PIC_layout.pdf used on input line 461.
+(pdftex.def)             Requested size: 459.22757pt x 345.14697pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--465
+
+ []
+
+[21 <C:/_projektarbeit/_display_board/doc/bericht/PIC_power_on.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/PIC_record_init.pdf): PDF inclusi
+on: found PDF version <1.6>, but at most version <1.5> allowed
+<PIC_record_init.pdf, id=124, 1148.19969pt x 1124.1097pt>
+File: PIC_record_init.pdf Graphic file (type pdf)
+
+<use PIC_record_init.pdf>
+Package pdftex.def Info: PIC_record_init.pdf used on input line 474.
+(pdftex.def)             Requested size: 229.61378pt x 224.78365pt.
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/PIC_recording.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<PIC_recording.pdf, id=125, 1551.76736pt x 1479.4873pt>
+File: PIC_recording.pdf Graphic file (type pdf)
+
+<use PIC_recording.pdf>
+Package pdftex.def Info: PIC_recording.pdf used on input line 480.
+(pdftex.def)             Requested size: 229.61378pt x 218.91103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--484
+
+ []
+
+
+Overfull \hbox (2.43333pt too wide) in paragraph at lines 467--484
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--484
+
+ []
+
+[22 <C:/_projektarbeit/_display_board/doc/bericht/PIC_layout.pdf>]
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <12> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 485.
+
+Underfull \hbox (badness 10000) in paragraph at lines 486--494
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 495--498
+
+ []
+
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/Wugsi.pdf): PDF inclusion: found 
+PDF version <1.6>, but at most version <1.5> allowed
+<Wugsi.pdf, id=131, 602.33032pt x 527.03902pt>
+File: Wugsi.pdf Graphic file (type pdf)
+ <use Wugsi.pdf>
+Package pdftex.def Info: Wugsi.pdf used on input line 501.
+(pdftex.def)             Requested size: 459.22757pt x 401.83247pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 499--505
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 499--505
+
+ []
+
+[23 <C:/_projektarbeit/_display_board/doc/bericht/PIC_record_init.pdf> <C:/_pro
+jektarbeit/_display_board/doc/bericht/PIC_recording.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/google_earth.pdf): PDF inclusion:
+ found PDF version <1.6>, but at most version <1.5> allowed
+<google_earth.pdf, id=140, 1084.20059pt x 655.03725pt>
+File: google_earth.pdf Graphic file (type pdf)
+ <use google_earth.pdf>
+Package pdftex.def Info: google_earth.pdf used on input line 508.
+(pdftex.def)             Requested size: 459.22757pt x 277.44261pt.
+
+Overfull \hbox (10.95003pt too wide) in paragraph at lines 506--512
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--512
+
+ []
+
+[24 <C:/_projektarbeit/_display_board/doc/bericht/Wugsi.pdf>] [25 <C:/_projekta
+rbeit/_display_board/doc/bericht/google_earth.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/PIC_remove_rubber_bands.pdf): PDF
+ inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<PIC_remove_rubber_bands.pdf, id=152, 921.573pt x 689.6766pt>
+File: PIC_remove_rubber_bands.pdf Graphic file (type pdf)
+
+<use PIC_remove_rubber_bands.pdf>
+Package pdftex.def Info: PIC_remove_rubber_bands.pdf used on input line 522.
+(pdftex.def)             Requested size: 229.61378pt x 171.8294pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--525
+
+ []
+
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/PIC_remove_connector.pdf): PDF in
+clusion: found PDF version <1.6>, but at most version <1.5> allowed
+<PIC_remove_connector.pdf, id=153, 921.573pt x 689.6766pt>
+File: PIC_remove_connector.pdf Graphic file (type pdf)
+
+<use PIC_remove_connector.pdf>
+Package pdftex.def Info: PIC_remove_connector.pdf used on input line 530.
+(pdftex.def)             Requested size: 229.61378pt x 171.8294pt.
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/PIC_remove_clips.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<PIC_remove_clips.pdf, id=154, 921.573pt x 689.6766pt>
+File: PIC_remove_clips.pdf Graphic file (type pdf)
+
+<use PIC_remove_clips.pdf>
+Package pdftex.def Info: PIC_remove_clips.pdf used on input line 535.
+(pdftex.def)             Requested size: 229.61378pt x 171.8294pt.
+
+Overfull \hbox (29.8084pt too wide) in paragraph at lines 527--538
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--538
+
+ []
+
+Missing character: There is no – in font pcrr7t!
+Missing character: There is no – in font cmr10!
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/PIC_plugin_external_voltage.pdf):
+ PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<PIC_plugin_external_voltage.pdf, id=155, 921.573pt x 689.6766pt>
+File: PIC_plugin_external_voltage.pdf Graphic file (type pdf)
+
+<use PIC_plugin_external_voltage.pdf>
+Package pdftex.def Info: PIC_plugin_external_voltage.pdf used on input line 543
+.
+(pdftex.def)             Requested size: 229.61378pt x 171.8294pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 538--546
+
+ []
+
+[26 <C:/_projektarbeit/_display_board/doc/bericht/PIC_remove_rubber_bands.pdf> 
+<C:/_projektarbeit/_display_board/doc/bericht/PIC_remove_connector.pdf> <C:/_pr
+ojektarbeit/_display_board/doc/bericht/PIC_remove_clips.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/VirtualBox.pdf): PDF inclusion: f
+ound PDF version <1.6>, but at most version <1.5> allowed
+<VirtualBox.pdf, id=165, 571.46501pt x 362.9058pt>
+File: VirtualBox.pdf Graphic file (type pdf)
+ <use VirtualBox.pdf>
+Package pdftex.def Info: VirtualBox.pdf used on input line 554.
+(pdftex.def)             Requested size: 459.22757pt x 291.64296pt.
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/virtualbox_filter.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<virtualbox_filter.pdf, id=166, 316.2214pt x 227.37949pt>
+File: virtualbox_filter.pdf Graphic file (type pdf)
+
+<use virtualbox_filter.pdf>
+Package pdftex.def Info: virtualbox_filter.pdf used on input line 559.
+(pdftex.def)             Requested size: 459.22757pt x 330.20876pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 551--562
+[] 
+ []
+
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 551--562
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--562
+
+ []
+
+[27 <C:/_projektarbeit/_display_board/doc/bericht/PIC_plugin_external_voltage.p
+df> <C:/_projektarbeit/_display_board/doc/bericht/VirtualBox.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/ISP_programmer.pdf): PDF inclusio
+n: found PDF version <1.6>, but at most version <1.5> allowed
+<ISP_programmer.pdf, id=174, 569.20657pt x 453.25334pt>
+File: ISP_programmer.pdf Graphic file (type pdf)
+
+<use ISP_programmer.pdf>
+Package pdftex.def Info: ISP_programmer.pdf used on input line 581.
+(pdftex.def)             Requested size: 367.38345pt x 292.55019pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 578--584
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--584
+
+ []
+
+[28 <C:/_projektarbeit/_display_board/doc/bericht/virtualbox_filter.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/positive_message.pdf): PDF inclus
+ion: found PDF version <1.6>, but at most version <1.5> allowed
+<positive_message.pdf, id=180, 378.71486pt x 520.2637pt>
+File: positive_message.pdf Graphic file (type pdf)
+
+<use positive_message.pdf>
+Package pdftex.def Info: positive_message.pdf used on input line 589.
+(pdftex.def)             Requested size: 367.38345pt x 504.72664pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 586--592
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--592
+
+ []
+
+[29 <C:/_projektarbeit/_display_board/doc/bericht/ISP_programmer.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/permission_denied.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<permission_denied.pdf, id=186, 583.51001pt x 72.27pt>
+File: permission_denied.pdf Graphic file (type pdf)
+
+<use permission_denied.pdf>
+Package pdftex.def Info: permission_denied.pdf used on input line 595.
+(pdftex.def)             Requested size: 367.38345pt x 45.50165pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 592--598
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--598
+
+ []
+
+[30 <C:/_projektarbeit/_display_board/doc/bericht/positive_message.pdf> <C:/_pr
+ojektarbeit/_display_board/doc/bericht/permission_denied.pdf>]
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/invalid_signature.pdf): PDF inclu
+sion: found PDF version <1.6>, but at most version <1.5> allowed
+<invalid_signature.pdf, id=194, 594.80219pt x 72.27pt>
+File: invalid_signature.pdf Graphic file (type pdf)
+
+<use invalid_signature.pdf>
+Package pdftex.def Info: invalid_signature.pdf used on input line 601.
+(pdftex.def)             Requested size: 367.38345pt x 44.6393pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 598--604
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 598--604
+
+ []
+
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/lfuse_changed.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<lfuse_changed.pdf, id=195, 471.3309pt x 128.75102pt>
+File: lfuse_changed.pdf Graphic file (type pdf)
+ <use lfuse_changed.pdf>
+Package pdftex.def Info: lfuse_changed.pdf used on input line 607.
+(pdftex.def)             Requested size: 367.38345pt x 100.35858pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 604--610
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--610
+
+ []
+
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/timeout.pdf): PDF inclusion: foun
+d PDF version <1.6>, but at most version <1.5> allowed
+<timeout.pdf, id=196, 597.81345pt x 94.1116pt>
+File: timeout.pdf Graphic file (type pdf)
+ <use timeout.pdf>
+Package pdftex.def Info: timeout.pdf used on input line 613.
+(pdftex.def)             Requested size: 367.38345pt x 57.83879pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 610--616
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--616
+
+ []
+
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/open_device.pdf): PDF inclusion: 
+found PDF version <1.6>, but at most version <1.5> allowed
+<open_device.pdf, id=197, 591.03813pt x 72.27pt>
+File: open_device.pdf Graphic file (type pdf)
+ <use open_device.pdf>
+Package pdftex.def Info: open_device.pdf used on input line 619.
+(pdftex.def)             Requested size: 367.38345pt x 44.92271pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 616--622
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 616--622
+
+ []
+
+
+
+pdfTeX warning: C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe (file
+ C:/_projektarbeit/_display_board/doc/bericht/claim_device.pdf): PDF inclusion:
+ found PDF version <1.6>, but at most version <1.5> allowed
+<claim_device.pdf, id=198, 595.55501pt x 72.27pt>
+File: claim_device.pdf Graphic file (type pdf)
+ <use claim_device.pdf>
+Package pdftex.def Info: claim_device.pdf used on input line 625.
+(pdftex.def)             Requested size: 367.38345pt x 44.58305pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 622--628
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 622--628
+
+ []
+
+[31 <C:/_projektarbeit/_display_board/doc/bericht/invalid_signature.pdf> <C:/_p
+rojektarbeit/_display_board/doc/bericht/lfuse_changed.pdf> <C:/_projektarbeit/_
+display_board/doc/bericht/timeout.pdf> <C:/_projektarbeit/_display_board/doc/be
+richt/open_device.pdf> <C:/_projektarbeit/_display_board/doc/bericht/claim_devi
+ce.pdf>] [32]
+Underfull \hbox (badness 4403) in paragraph at lines 644--645
+[]\OT1/cmr/m/n/10.95 Electronic As-sem-bly, ``DOGL GRAFIK SE-RIE", 2008, http:/
+/www.lcd-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
+[]\OT1/cmr/m/n/10.95 www.Microcontroller.net, ``AVR-GCC-Tutorial", 2009,
+ []
+
+[33] (C:\_projektarbeit\_display_board\doc\bericht\bericht.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6137 strings out of 494053
+ 92361 string characters out of 3146188
+ 430079 words of memory out of 3000000
+ 9331 multiletter control sequences out of 15000+200000
+ 12545 words of font info for 44 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 40i,8n,52p,604b,1564s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/urw/courier/ucrr8a.pfb>
+Output written on bericht.pdf (33 pages, 1900006 bytes).
+PDF statistics:
+ 259 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+
