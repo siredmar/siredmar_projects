@@ -1,0 +1,30 @@
+/**
+ * touch.h
+ *
+ *  Created on: 29.05.2009
+ *      Author: sebastian
+ */
+
+#ifndef TOUCH_H_
+#define TOUCH_H_ TOUCH_H_
+
+#include "adc.h"
+
+
+#define TOUCH_PORT 	PORTA
+#define TOUCH_PIN	PINA
+#define TOUCH_DDR  	DDRA
+
+#define TOUCH_X1 PA0
+#define TOUCH_X2 PA1
+#define TOUCH_Y1 PA2
+#define TOUCH_Y2 PA3
+
+#define TOUCH_PRESSED_LEVEL 1000
+
+uint8_t touch_is_pressed(void);
+
+int16_t touch_readX(void);
+int16_t touch_readY(void);
+
+#endif /* TOUCH_H_ */
